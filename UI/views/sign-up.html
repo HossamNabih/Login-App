@@ -1,0 +1,60 @@
+<div style="background:#eee;" class="container text-center" ng-controller="LoginController">
+    
+    <div class="row">
+        <div style="background:#fff;margin-top: 10vh; height: 80vh" class="col-sm-offset-4 col-sm-4">
+            <div class="row">
+                <div style="padding:15px; padding-left:20px;">
+                    <span style="font-size:22px; " class="pull-left lead">Register with</span>
+                    <a type="button" class="close pull-right" href="#/">×</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-4 col-sm-4" style="padding-top:10px; padding-bottom:10px;"  class="col-sm-4 text-center center-block">
+                 <a href="#"> <img style="margin-left:25px;" width="50" height="50" class="img-responsive" src="images/gmail.png" ></a>
+                </div>  
+            </div>
+            <div style="margin-bottom:50px;" >
+                <div class="col-sm-5" style="border-bottom:2px solid #eee; padding-top:10px;"></div>
+                <div class="col-sm-2"><span >or</span></div>
+               <div class="col-sm-5" style="border-bottom:2px solid #eee;padding-top:10px;"></div>
+            </div>
+            <form ng-submit="addUser()">
+            <input type="hidden" ng-model="gmail">
+            <div style="position:relative; margin-bottom:10px;">
+                <input ng-model="firstName"   id="fName" class="form-control login-signup-input" placeholder="Firts Name">
+                <label class="label-for"  for="fName"><span ><i class="fa fa-user"></i></span></label>
+            </div>
+            <div style="position:relative; margin-bottom:10px;">
+                <input ng-model="lastName"  id="lName" class="form-control login-signup-input" placeholder="Last Name">
+                <label class="label-for"  for="lName"><span ><i class="fa fa-user"></i></span></label>
+            </div>
+            <div style="position:relative; margin-bottom:10px;">
+                <input ng-model="email"  id="email" class="form-control login-signup-input" placeholder="Enter Email">
+                <label class="label-for"  for="email"><span><i class="fa fa-envelope-o"></i></span></label>
+            </div>
+            <div style="position:relative; margin-bottom:10px;">
+                <input type="password" ng-model="password"   id="pass" class="form-control login-signup-input" placeholder="Enter password">
+                <label class="label-for"  for="pass"><span ><i class="fa fa-lock"></i></span></label>
+            </div>
+            <div style="position:relative; margin-bottom:10px;">
+                <input type="password" ng-model="cpassword"  id="pass2" class="form-control login-signup-input" placeholder="Confirm password">
+                <label class="label-for"  for="pass2"><span ><i class="fa fa-lock"></i></span></label>
+            </div>
+            
+            <div style="position:relative;margin-bottom:10px;">
+                <button type="submit" id="sub-login-signup" class="form-control">
+                    Register
+                </button>
+               
+            </div>
+            </form>
+            <div >
+                <span style="background:#d43f3a; width:100%;color:#fff;" class="pull-left">{{errorMessage}}</span>
+            </div>
+            
+            <div  style="margin-top:50px; color:#bbb;">
+                <span >Already have an account ?</span><a href="#/Sign-In"> Lgin </a>
+            </div>
+        </div>
+    </div>
+</div>

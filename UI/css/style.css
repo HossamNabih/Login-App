@@ -1,0 +1,30 @@
+/* ^^^^^^^^page layout ^^^^^^^^^ */
+
+body{ padding-top: 50px; background-color: #eee; margin: 0;padding: 0 }
+
+/******* start carsol ****/
+.login-signup-input{
+        font-size:16px; 
+        height:40px; 
+        background-color: #eee; 
+}
+.login-signup-input:focus +label {
+    color: /*#337ab7;*/#00BBFF;
+}
+.label-for
+{
+    position:absolute; 
+    top:6px; 
+    right:5px;
+    font-size:20px;
+    color:#ddd;
+}
+#sub-login-signup{
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #00BBFF;
+    border-color: #00BBFF;
+    height:40px;
+
+}
