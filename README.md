@@ -1,8 +1,5 @@
 Simple-Login-App
 ===============
-
-
-
 ```
 <p>it is a simple login app suing RESTful API , nodejs and angular
  </p>
@@ -63,5 +60,6 @@ Simple-Login-App
 	</ul>
 </li>
 <li> server.js</li>
+
 </ul>
 
